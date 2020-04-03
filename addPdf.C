@@ -55,7 +55,11 @@ void addPdf()
 
   // Generate a dataset of 1000 events in x from gauss                                                           
   RooDataSet* data = model.generate(x,10000) ;
+ 
 
+  //Create binned Data
+  //RooDataHist* dh = d->binnedClone() ;
+  //model.chi2FitTo(*dh);
   // Make a second plot frame in x and draw both the                                                            
   // data and the p.d.f in the frame                                                                            
   RooPlot* xframe2 = x.frame(Title("Gaussian p.d.f. with data")) ;
