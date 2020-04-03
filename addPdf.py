@@ -15,12 +15,12 @@ nbkg = r.RooRealVar("nbkg","background events",20000,0,80000)
 
 model = r.RooAddPdf("model","Gauss+shape",r.RooArgList(gauss,shape),r.RooArgList(nsig,nbkg))
 
-xframe = x.frame(r.RooFit.Title("Gaussian p.d.f."))
+xframe = x.frame(r.RooFit.Title("Generated data"))
 
 
 data = model.generate(r.RooArgSet(x),10000)
 
-xframe2 = x.frame(r.RooFit.Title("Gaussian p.d.f. with data"))
+xframe2 = x.frame(r.RooFit.Title("Gaussian+Exp fit to the data"))
 data.plotOn(xframe)
 
 
