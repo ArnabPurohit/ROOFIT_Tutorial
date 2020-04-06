@@ -50,9 +50,9 @@ if(doFit):
     pdf.plotOn(plot1,ROOT.RooFit.ProjWData(data),ROOT.RooFit.Slice(w.cat("index"),"channel1"))
     pdf.plotOn(plot2,ROOT.RooFit.ProjWData(data),ROOT.RooFit.Slice(w.cat("index"),"channel2"))
     
-    pdf.paramOn(plot1,ROOT.RooFit.Layout(0.65,0.85,0.85),ROOT.RooFit.Parameters(ROOT.RooArgSet(w.var("a1"),w.var("nbkg1"))))
-    pdf.paramOn(plot2,ROOT.RooFit.Layout(0.65,0.85,0.85),ROOT.RooFit.Parameters(ROOT.RooArgSet(w.var("a2"),w.var("nbkg2"))))
-    pdf.paramOn(plot2,ROOT.RooFit.Layout(0.65,0.85,0.7),ROOT.RooFit.Parameters(ROOT.RooArgSet(w.var("mu"))))
+    #pdf.paramOn(plot1,ROOT.RooFit.Layout(0.65,0.85,0.85),ROOT.RooFit.Parameters(ROOT.RooArgSet(w.var("a1"),w.var("nbkg1"))))
+    #pdf.paramOn(plot2,ROOT.RooFit.Layout(0.65,0.85,0.85),ROOT.RooFit.Parameters(ROOT.RooArgSet(w.var("a2"),w.var("nbkg2"))))
+    #pdf.paramOn(plot2,ROOT.RooFit.Layout(0.65,0.85,0.7),ROOT.RooFit.Parameters(ROOT.RooArgSet(w.var("mu"))))
     
     c.Divide(1,2)
     c.cd(1)
